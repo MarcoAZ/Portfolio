@@ -1,5 +1,5 @@
 # Portfolio
-###Purpose:
+### Purpose:
 This project will act as my portfolio as I collect more projects that I put together in my spare time.
 Each project in my portfolio is chosen in part because I want to put my own spin on something I've already seen or want to 
 build new skills by working with new tools or aspects of web development.
