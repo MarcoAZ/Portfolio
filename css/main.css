@@ -1,0 +1,97 @@
+
+/***********HEADER***********/
+.header
+{
+    height: 200px;
+    padding: 0px 0px 10px 40px;
+}
+.logo
+{
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.title
+{
+    height: 200px;
+    padding-left: 30px;
+    float: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+.title h1
+{
+    font-size: 80px;
+}
+
+.title h4
+{
+    font-size: 25px;
+}
+
+.title span
+{
+    color: grey;
+}
+
+/**********NAV***********/
+.nav
+{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    float: left;
+}
+
+.nav li
+{
+    list-style: none;
+}
+
+.prj-list
+{
+    font-size: 18px;
+    color: grey;
+}
+
+/*********MAIN CONTENT*********/
+.prj-squares
+{
+    padding-left: 30px;
+    float: left;
+}
+
+.triad
+{
+    height: 260px;
+    /*width: 810px;*/
+    float: left;
+}
+
+.triad ul
+{
+    padding: 0px;
+}
+
+.triad li
+{
+    height: 260px;
+    width: 260px;
+    float: left;
+    margin: 10px;
+
+    text-align: center;
+    list-style: none;
+    background-color: #f6f6f6;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.wrench
+{
+    margin: 33%;
+}
+
+.dn
+{
+    margin: 15%;
+}

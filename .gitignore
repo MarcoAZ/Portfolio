@@ -8,5 +8,11 @@
 out
 gen
 
+# Custom Bootstrap
+css/bootstrap*
+
 # Development files
 Development/
+
+# Media
+img/
