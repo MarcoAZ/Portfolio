@@ -43,15 +43,36 @@
     float: left;
 }
 
+.sidebar ul
+{
+    padding-left: 10px;
+}
+
 .nav li
 {
     list-style: none;
+    width: 190px;
 }
 
-.prj-list
+.sidebar
+{
+    margin-top: 25px;
+}
+
+.prj-list-item
 {
     font-size: 18px;
     color: grey;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.prj-list-item:hover
+{
+    padding-left: 15px;
 }
 
 /*********MAIN CONTENT*********/
@@ -65,25 +86,50 @@
 {
     height: 260px;
     /*width: 810px;*/
-    float: left;
+    /*float: left;*/
+}
+
+.triad-content
+{
+    height: 260px;
+    width: 840px;
+    margin: 11.5px;
+}
+
+.triad-content h2
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.dn-content
+{
+    background-color: #f6f6f6;
+    height: 100%;
+    width: 100%;
+    /*display: none;*/
 }
 
 .triad ul
 {
-    padding: 0px;
+    padding: 0;
 }
 
-.triad li
+.prj-box
 {
     height: 260px;
     width: 260px;
     float: left;
-    margin: 10px;
+    margin: 13.9px;
 
     text-align: center;
     list-style: none;
     background-color: #f6f6f6;
-    box-shadow: 5px 5px 5px grey;
+    /*box-shadow: 0px 0px 10px grey;*/
+}
+
+.tri-shadow
+{
+    box-shadow: 0px 0px 10px grey;
 }
 
 .wrench
@@ -91,7 +137,7 @@
     margin: 33%;
 }
 
-.dn
+.artist
 {
     margin: 15%;
 }
