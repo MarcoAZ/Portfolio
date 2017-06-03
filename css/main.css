@@ -94,6 +94,9 @@
     height: 260px;
     width: 840px;
     margin: 11.5px;
+
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
 .triad-content h2
@@ -101,12 +104,40 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.dn-content
+/*fade in animations for content*/
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content-show
 {
     background-color: #f6f6f6;
-    height: 100%;
-    width: 100%;
-    /*display: none;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    padding-top: 5px;
+
+    display: block !important;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.artist-content, .comics-content, .wrench-content
+{
+    display: none;
 }
 
 .triad ul

@@ -27,12 +27,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 /*On click, the Box Shadow is removed, making sure to return shadows to other boxes*/
 function openProject(prj, prjs) {
-    // console.log(prj);
-    //go through all other projects and make sure box shadow is active
-    for(var i = 0; i < prjs.length; i++)if (prjs[i] != prj)
-        prjs[i].classList.add("tri-shadow");
+    var contentName = prj.firstChild.classList.toString() + "-content";
+    var content = document.getElementsByClassName(contentName)[0];
 
+    //go through all other projects and make sure box shadow is active and content is closed
+    for(var i = 0; i < prjs.length; i++) {
+        if (prjs[i] != prj)
+        {
+            prjs[i].classList.add("tri-shadow");
+        }
+    }
+    var prjContent = document.getElementsByClassName("content-show")[0];
+    if(prjContent != undefined)
+        prjContent.classList.remove("content-show");
+
+    //display next content
     prj.classList.remove("tri-shadow");
+    content.classList.add("content-show");
+
 }
 
 /*When the mouse enters, change to filled arrow. On leave, revert to open icon*/
