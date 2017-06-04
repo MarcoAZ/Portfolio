@@ -57,6 +57,7 @@
 .sidebar
 {
     margin-top: 25px;
+    border-right: 2px solid #000000;
 }
 
 .prj-list-item
@@ -91,7 +92,7 @@
 
 .triad-content
 {
-    height: 260px;
+    height: 325px;
     width: 840px;
     margin: 11.5px;
 
@@ -126,7 +127,7 @@
 .content-show
 {
     background-color: #f6f6f6;
-    /*height: 100%;*/
+    height: 100%;
     /*width: 100%;*/
     padding-top: 5px;
 
@@ -171,4 +172,34 @@
 .artist
 {
     margin: 15%;
+}
+
+.content-icons
+{
+    text-align: center;
+    float: left;
+    width: 13%
+}
+
+.content-icons a
+{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.icon
+{
+    font-size: 3em;
+
+    -webkit-transition: font-size .2s;
+    -moz-transition: font-size .2s;
+    -ms-transition: font-size .2s;
+    -o-transition: font-size .2s;
+    transition: font-size .2s;
+}
+
+.icon:hover
+{
+    font-size: 5em;
 }
