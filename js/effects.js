@@ -48,13 +48,24 @@ function openProject(prj, prjs) {
             prjs[i].classList.add("tri-shadow");
         }
     }
+
     var prjContent = document.getElementsByClassName("content-show")[0];
+
+    //close project instead if we are clicking the same project box
+    if(prjContent == content)
+    {
+        prj.classList.add("tri-shadow");
+        prjContent.classList.remove("content-show");
+    }
+    else{ //remove drop shadow from requested project and show its content
+        prj.classList.remove("tri-shadow");
+        content.classList.add("content-show");
+    }
+
+    //remove currently displayed content only if there was something displayed
     if(prjContent != undefined)
         prjContent.classList.remove("content-show");
 
-    //display next content
-    prj.classList.remove("tri-shadow");
-    content.classList.add("content-show");
 
 }
 
