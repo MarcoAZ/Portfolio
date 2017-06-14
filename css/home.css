@@ -81,6 +81,17 @@
     padding: 20px;
 }
 
+.artist-content
+{
+    height: 300px;
+}
+
+.wrench-content
+{
+    height: 200px;
+}
+
+
 .triad ul
 {
     padding: 0;
