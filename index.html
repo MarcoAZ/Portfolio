@@ -41,10 +41,10 @@
                 <li>
                     <a href="/">Projects</a>
                     <ul>
-                        <li class="prj-list-item" id="catalyst"><i class="fa fa-arrow-circle-o-right"></i><a href="http://marcoaz.com/catalyst"> Capstone</a></li>
-                        <li class="prj-list-item" id="artist"><i class="fa fa-arrow-circle-o-right"></i> Artist Portfolio</li>
-                        <li class="prj-list-item" id="comics"><i class="fa fa-arrow-circle-o-right"></i> First Edition</li>
-                        <li class="prj-list-item" id="wrench"><i class="fa fa-arrow-circle-o-right"></i> Upcoming Project</li>
+                        <li class="prj-list-item" id="catalyst" ><i class="fa fa-arrow-circle-o-right"></i> Capstone</a></li>
+                        <li class="prj-list-item" id="artist"   ><i class="fa fa-arrow-circle-o-right"></i> Artist Portfolio</li>
+                        <li class="prj-list-item" id="comics"   ><i class="fa fa-arrow-circle-o-right"></i> First Edition</li>
+                        <li class="prj-list-item" id="wrench"   ><i class="fa fa-arrow-circle-o-right"></i> Upcoming Project</li>
                     </ul>
                 </li>
             </ul>
@@ -53,13 +53,54 @@
         <div class="prj-squares">
             <div class="triad">
                 <ul>
+                    <li class="prj-box tri-shadow"><div class="catalyst"><img src="img/cBlock.png"></div></li>
                     <li class="prj-box tri-shadow"><div class="artist"><img src="img/dn.jpg"></div></li>
                     <li class="prj-box tri-shadow"><img class="comics" src="img/1sted.png"></li>
-                    <li class="prj-box tri-shadow"><div class="wrench"><i class="fa fa-wrench fa-5x"></i></div></li>
                 </ul>
             </div>
 
             <div class="triad-content">
+                <div class="catalyst-content">
+                    <h2>Capstone Project: Catalyst Partnerships</h2>
+                    <h4>MongoDB, Bootstrap, NodeJS</h4>
+                    <p>
+                        My capstone project at Oregon State University was a group effort with two other students. One of
+                        them reached out to a local client that was interested in a web application that could handle
+                        application submissions and processing. <a href="http://www.catalystnw.org/"> Catalyst Partnerships NW</a>
+                        is a not-for-profit construction company that helps coordinate repairs for to aid under-resourced
+                        people in their community. We were able to deliver a web app that helps Catalyst streamline their workflow.
+                        Their workflow requires receiving an application, reviewing it, and conducting a phone interview
+                        before they get together to approve work to be completed.
+                    </p>
+
+                    <p>There is TONS to cover in this project so I though it best to attach our
+                        <a href="data/CapstoneFinalReport.pdf"> final project report</a> which covers in excruciating detail
+                        how it all came together and what we used to do it. I was directly responsible for the
+                        <a href="http://marcoaz.com/catalyst/view/5940414832e378333712da3c">application review page</a>
+                        and the <a href="http://marcoaz.com/catalyst/view">home page for viewing all applications</a>. These pages
+                        needed to take the data model and make it viewable and editable. Perhaps my favorite work was
+                        making each attribute inline-editable as well as the user access to CRUD notes for each application.
+                    </p>
+
+                    <blockquote>
+                        <p>...this is stunning work. This is one of the best student projects I've ever seen...</p>
+                        <p>Backend to front end, there's so much work that was done! And managing a project this size isn't easy,
+                            in addition to learning the technologies and managing the rest of your courseload.</p>
+                        <footer>Professor Benjamin Brewster, <cite title="Source Title">Oregon State University</cite></footer>
+                    </blockquote>
+
+                    <p class="content-icons">
+                        <span class="icon">
+                            <a href="https://github.com/MarcoAZ/kohn-catalyst"><i class="fa fa-github"></i></a>
+                        </span>
+                    </p>
+                    <p class="content-icons">
+                        <span class="icon">
+                            <a href="http://marcoaz.com/catalyst"><i class="fa fa-external-link"></i></a>
+                        </span>
+                    </p>
+                </div>
+
                 <div class="artist-content">
                     <h2>Artist Portfolio: Daniella Napolitano</h2>
                     <h4>Responsive, jQuery, Bootstrap</h4>
@@ -90,14 +131,10 @@
                     <h4>API, AJAX, jQuery</h4>
                     <p>
                         The idea for this website came to me when I was about to head out to a local comic book store. I
-                        decided
-                        to check their website for store hours and this week's new shipment of issues. Their website
-                        turned out
-                        to be an unfortunate mess. While I was able to ultimately find the information I was looking
-                        for, the website
-                        was simply too cluttered with a large assortment of pictures. I figured anyone really visiting
-                        the site was looking
-                        for information: address, phone, store inventory, and possibly events. This site aimed to
+                        decided to check their website for store hours and this week's new shipment of issues. Their website
+                        turned out to be an unfortunate mess. While I was able to ultimately find the information I was looking
+                        for, the website was simply too cluttered with a large assortment of pictures. I figured anyone really visiting
+                        the site was looking for information: address, phone, store inventory, and possibly events. This site aimed to
                         deliver on these expectations
                         with no clutter.
                     </p>
@@ -118,7 +155,15 @@
                         </span>
                     </p>
                 </div>
+            </div>
 
+            <div class="triad">
+                <ul>
+                    <li class="prj-box tri-shadow"><div class="wrench"><i class="fa fa-wrench fa-5x"></i></div></li>
+                </ul>
+            </div>
+
+            <div class="triad-content">
                 <div class="wrench-content">
                     <h2>Coming Soon</h2>
                     <h4>MongoDB, Angular, React</h4>
@@ -129,6 +174,7 @@
                     </p>
                 </div>
             </div>
+
         </div>
 
     </div>

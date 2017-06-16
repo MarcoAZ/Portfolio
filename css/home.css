@@ -32,9 +32,10 @@
 
 .triad-content
 {
-    height: 360px;
+    /*height: 360px;*/
     width: 840px;
     margin: 11.5px;
+    display: none;
 
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
@@ -75,7 +76,7 @@
     animation: fadeIn 1s;
 }
 
-.artist-content, .comics-content, .wrench-content
+.artist-content, .comics-content, .wrench-content, .catalyst-content
 {
     display: none;
     padding: 20px;
@@ -83,12 +84,22 @@
 
 .artist-content
 {
-    height: 300px;
+    height: 320px;
 }
 
 .wrench-content
 {
     height: 200px;
+}
+
+.catalyst-content
+{
+    height: 550px;
+}
+
+.comics-content
+{
+    height: 380px;
 }
 
 

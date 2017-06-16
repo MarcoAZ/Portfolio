@@ -51,20 +51,27 @@ function openProject(prj, prjs) {
 
     var prjContent = document.getElementsByClassName("content-show")[0];
 
+    //remove currently displayed content only if there was something displayed
+    if(prjContent != undefined) {
+        prjContent.classList.remove("content-show");
+        prjContent.parentElement.setAttribute('style', 'display:none');
+    }
+
+
     //close project instead if we are clicking the same project box
     if(prjContent == content)
     {
         prj.classList.add("tri-shadow");
         prjContent.classList.remove("content-show");
+        //also close parent
+        prjContent.parentElement.setAttribute('style', 'display:none');
     }
     else{ //remove drop shadow from requested project and show its content
         prj.classList.remove("tri-shadow");
         content.classList.add("content-show");
+        //also open parent
+        content.parentElement.setAttribute('style', 'display:block');
     }
-
-    //remove currently displayed content only if there was something displayed
-    if(prjContent != undefined)
-        prjContent.classList.remove("content-show");
 
 
 }
