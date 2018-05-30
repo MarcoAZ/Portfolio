@@ -76,7 +76,7 @@
     animation: fadeIn 1s;
 }
 
-.artist-content, .comics-content, .wrench-content, .catalyst-content
+.artist-content, .comics-content, .wrench-content, .catalyst-content, .pos-content
 {
     display: none;
     padding: 20px;
@@ -85,6 +85,11 @@
 .artist-content
 {
     height: 320px;
+}
+
+.pos-content
+{
+    height: 200px;
 }
 
 .wrench-content
@@ -126,7 +131,8 @@
     box-shadow: 0px 0px 10px grey;
 }
 
-.wrench
+/* .fa-icon */
+.triad ul li i
 {
     margin: 33%;
 }
