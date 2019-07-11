@@ -41,6 +41,7 @@
                 <li>
                     <a href="/">Projects</a>
                     <ul>
+                        <li class="prj-list-item" id="msf" ><i class="fa fa-arrow-circle-o-right"></i> Loot Box Simulator</a></li>
                         <li class="prj-list-item" id="catalyst" ><i class="fa fa-arrow-circle-o-right"></i> Capstone</a></li>
                         <li class="prj-list-item" id="artist"   ><i class="fa fa-arrow-circle-o-right"></i> Artist Portfolio</li>
                         <li class="prj-list-item" id="comics"   ><i class="fa fa-arrow-circle-o-right"></i> First Edition</li>
@@ -54,9 +55,9 @@
         <div class="prj-squares">
             <div class="triad">
                 <ul>
+                    <li class="prj-box tri-shadow"><img class="msf" src="img/msf.png"></li>
                     <li class="prj-box tri-shadow"><div class="catalyst"><img src="img/cBlock.png"></div></li>
                     <li class="prj-box tri-shadow"><div class="artist"><img src="img/dn.jpg"></div></li>
-                    <li class="prj-box tri-shadow"><img class="comics" src="img/1sted.png"></li>
                 </ul>
             </div>
 
@@ -127,32 +128,24 @@
                     </p>
                 </div>
 
-                <div class="comics-content">
-                    <h2>First Edition</h2>
-                    <h4>API, AJAX, jQuery</h4>
+                <div class="msf-content">
+                    <h2>Loot Box Simulator</h2>
+                    <h4>MongoDB, Bootstrap, NodeJS</h4>
                     <p>
-                        The idea for this website came to me when I was about to head out to a local comic book store. I
-                        decided to check their website for store hours and this week's new shipment of issues. Their website
-                        turned out to be an unfortunate mess. While I was able to ultimately find the information I was looking
-                        for, the website was simply too cluttered with a large assortment of pictures. I figured anyone really visiting
-                        the site was looking for information: address, phone, store inventory, and possibly events. This site aimed to
-                        deliver on these expectations
-                        with no clutter.
+                        A web app for simulating the prize drops when opening a loot box, called orbs, in the mobile game <a href="https://www.marvelstrikeforce.com/en/">Marvel Strike Force</a>.
                     </p>
-                    <p>The project gave me the opportunity to work with another API; in this case, Marvel's API can make
-                        requests for comics
-                        based on release date, character, events, and more. I used this API to mimic a store inventory.
-                        Using asynchronous
-                        AJAX calls, the First Edition website cleanly loads new and featured issues.
+                    <p>As required by law (or maybe just by Apple/Google app requirements), the game provides the percent chance of each prize in an orb.
+                      For instance, a Mega Orb has a 15% chance to drop an uncommon prize and an 85% chance to drop a common prize. This simulator allows players
+                      to test their luck without having to spend currency, either real or in-game, while also demonstrating how the odds are stacked against them.
                     </p>
                     <p class="content-icons">
                         <span class="icon">
-                            <a href="https://github.com/MarcoAZ/First-Edition"><i class="fa fa-github"></i></a>
+                            <a href="https://github.com/MarcoAZ/MSF-Orb-Simulator"><i class="fa fa-github"></i></a>
                         </span>
                     </p>
                     <p class="content-icons">
                         <span class="icon">
-                            <a href="http://marcoaz.com/1stedition"><i class="fa fa-external-link"></i></a>
+                            <a href="http://www.msf-rng.fun"><i class="fa fa-external-link"></i></a>
                         </span>
                     </p>
                 </div>
@@ -160,28 +153,58 @@
 
             <div class="triad">
                 <ul>
-					<li class="prj-box tri-shadow"><div class="pos"><i class="fa fa-shopping-cart fa-5x"></i></div></li>
+                    <li class="prj-box tri-shadow"><img class="comics" src="img/1sted.png"></li>
+					          <li class="prj-box tri-shadow"><div class="pos"><i class="fa fa-shopping-cart fa-5x"></i></div></li>
                     <li class="prj-box tri-shadow"><div class="wrench"><i class="fa fa-wrench fa-5x"></i></div></li>
                 </ul>
             </div>
 
             <div class="triad-content">
-				<div class="pos-content">
+                  <div class="comics-content">
+                      <h2>First Edition</h2>
+                      <h4>API, AJAX, jQuery</h4>
+                      <p>
+                          The idea for this website came to me when I was about to head out to a local comic book store. I
+                          decided to check their website for store hours and this week's new shipment of issues. Their website
+                          turned out to be an unfortunate mess. While I was able to ultimately find the information I was looking
+                          for, the website was simply too cluttered with a large assortment of pictures. I figured anyone really visiting
+                          the site was looking for information: address, phone, store inventory, and possibly events. This site aimed to
+                          deliver on these expectations
+                          with no clutter.
+                      </p>
+                      <p>The project gave me the opportunity to work with another API; in this case, Marvel's API can make
+                          requests for comics
+                          based on release date, character, events, and more. I used this API to mimic a store inventory.
+                          Using asynchronous
+                          AJAX calls, the First Edition website cleanly loads new and featured issues.
+                      </p>
+                      <p class="content-icons">
+                          <span class="icon">
+                              <a href="https://github.com/MarcoAZ/First-Edition"><i class="fa fa-github"></i></a>
+                          </span>
+                      </p>
+                      <p class="content-icons">
+                          <span class="icon">
+                              <a href="http://marcoaz.com/1stedition"><i class="fa fa-external-link"></i></a>
+                          </span>
+                      </p>
+                  </div>
+				          <div class="pos-content">
                     <h2>Point of Sale System</h2>
                     <h4>C#, JavaScript, Bootstrap</h4>
                     <p>
-                        This is a simple point of sale system I was asked to create as part of a job interview. The user is capable of CRUD actions for 
+                        This is a simple point of sale system I was asked to create as part of a job interview. The user is capable of CRUD actions for
 						menu items, taxes, and promotional discounts. It features a user creation and login screen. Orders are created by selecting items
-						and any applicable discounts. The bill dynamically updates the list of items and the total including taxes and discounts whenever 
+						and any applicable discounts. The bill dynamically updates the list of items and the total including taxes and discounts whenever
 						an item is added. On order completion, the order is added to a sales history table with information such as time of sale, cashier name, total, and total taxes/discounts.
                     </p>
-					<p class="content-icons">
+					          <p class="content-icons">
                         <span class="icon">
                             <a href="https://github.com/MarcoAZ/PoS"><i class="fa fa-github"></i></a>
                         </span>
                     </p>
                 </div>
-			
+
                 <div class="wrench-content">
                     <h2>Coming Soon</h2>
                     <h4>MongoDB, Angular, React</h4>

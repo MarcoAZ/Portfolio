@@ -26,13 +26,10 @@
 .triad
 {
     height: 260px;
-    /*width: 810px;*/
-    /*float: left;*/
 }
 
 .triad-content
 {
-    /*height: 360px;*/
     width: 840px;
     margin: 11.5px;
     display: none;
@@ -76,7 +73,7 @@
     animation: fadeIn 1s;
 }
 
-.artist-content, .comics-content, .wrench-content, .catalyst-content, .pos-content
+.artist-content, .comics-content, .wrench-content, .catalyst-content, .pos-content, .msf-content
 {
     display: none;
     padding: 20px;
@@ -107,6 +104,11 @@
     height: 380px;
 }
 
+.msf-content
+{
+    height: 320px;
+}
+
 
 .triad ul
 {
@@ -123,7 +125,6 @@
     text-align: center;
     list-style: none;
     background-color: #f6f6f6;
-    /*box-shadow: 0px 0px 10px grey;*/
 }
 
 .tri-shadow
