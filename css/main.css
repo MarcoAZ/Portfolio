@@ -3,7 +3,7 @@
 .header
 {
     height: 200px;
-    padding: 0px 0px 10px 40px;
+    padding: 0px 0px 10px 10px;
 }
 .logo
 {
@@ -23,6 +23,11 @@
 .title h1
 {
     font-size: 80px;
+}
+
+.title h1 a{
+  color: black;
+  text-decoration: none;
 }
 
 .title h4
@@ -64,4 +69,3 @@
     margin-top: 25px;
     border-right: 2px solid #000000;
 }
-
